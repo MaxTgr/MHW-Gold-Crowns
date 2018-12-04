@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/header"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="72dp"
@@ -48,5 +49,11 @@
                 android:src="@drawable/bc"/>
         </LinearLayout>
     </LinearLayout>
-    
+    <ListView
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
 </android.support.constraint.ConstraintLayout>

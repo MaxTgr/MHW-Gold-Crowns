@@ -6,14 +6,19 @@ import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import me.maxcostadev.mhwcrowns.model.Monster;
 
 public class JsonLoader {
 
-    public static Monster[] getMonsters(Context context){
+    public static ArrayList<Monster> getMonsters(Context context){
         Gson gson = new Gson();
-        return gson.fromJson(loadJSONFromAsset(context), Monster[].class);
+
+        Monster[] arr = gson.fromJson(loadJSONFromAsset(context), Monster[].class);
+
+        return new ArrayList<>(Arrays.asList(arr));
     }
 
     private static String loadJSONFromAsset(Context context) {

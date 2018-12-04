@@ -1,8 +1,7 @@
 package me.maxcostadev.mhwcrowns
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,15 +13,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         loadData()
-
     }
 
-    fun loadData(){
+    fun loadData() {
         JsonLoader.getMonsters(applicationContext) // TODO: send the data to a adapter
         setUpProgressBar()
     }
 
-    fun setUpProgressBar(){
+    fun setUpProgressBar() {
         mc_progress.max = NUMBER_OF_MONSTERS
         bc_progress.max = NUMBER_OF_MONSTERS
         mc_progress.progress = 86

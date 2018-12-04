@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#8888"
+    android:layout_width="match_parent"
+    android:layout_height="72sp">
+
+    <ImageView
+        android:id="@+id/m_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/tobi_kadachi"/>
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/m_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/m_image"/>
+
+    <ImageView
+        android:id="@+id/m_mc_event"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintRight_toRightOf="@id/m_mc_btn"
+        app:layout_constraintLeft_toRightOf="@id/m_mc_btn"
+        app:layout_constraintTop_toTopOf="@id/m_mc_btn"
+        app:layout_constraintBottom_toTopOf="@id/m_mc_btn"/>
+
+    <ImageView
+        android:id="@+id/m_mc_btn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/mc"
+        app:layout_constraintRight_toLeftOf="@id/m_bc_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/m_bc_event"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintRight_toRightOf="@id/m_bc_btn"
+        app:layout_constraintLeft_toRightOf="@id/m_bc_btn"
+        app:layout_constraintTop_toTopOf="@id/m_bc_btn"
+        app:layout_constraintBottom_toTopOf="@id/m_bc_btn"/>
+
+    <ImageView
+        android:id="@+id/m_bc_btn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/bc"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
