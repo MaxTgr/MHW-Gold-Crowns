@@ -1,52 +1,46 @@
 package me.maxcostadev.mhwcrowns
 
 import android.content.Context
+import android.graphics.drawable.Drawable
+import android.support.v4.content.ContextCompat
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
 import me.maxcostadev.mhwcrowns.model.Monster
 
-open class Adapter(context: Context, resource: Int, list: ArrayList<Monster>) :
-        ArrayAdapter<Monster>(context, resource, list) {
 
-    var resource: Int
-    var list: ArrayList<Monster>
-    var vi: LayoutInflater
+class Adapter(context: Context, users: ArrayList<Monster>) : ArrayAdapter<Monster>(context, 0, users) {
 
-    init {
-        this.resource = resource
-        this.list = list
-        this.vi = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-    }
-
-
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
-        var holder: ViewHolder
-        var retView: View
-
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        var convertView = convertView
+        // Get the data item for this position
+        val monster = getItem(position)
+        // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
-            retView = vi.inflate(resource, null)
-            holder = ViewHolder()
-
-            //holder.image = retView.findViewById(R.id.myImage) as ImageView?
-
-            retView.tag = holder
-
-        } else {
-            holder = convertView.tag as ViewHolder
-            retView = convertView
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
         }
+        // Lookup view for data population
+        val name = convertView!!.findViewById<TextView>(R.id.m_name)
+        val image = convertView.findViewById<ImageView>(R.id.m_image)
+        val isBigCollected = convertView.findViewById<ImageView>(R.id.m_bc_btn)
+        val isMiniCollected = convertView.findViewById<ImageView>(R.id.m_mc_btn)
+        val isBigEvent = convertView.findViewById<ImageView>(R.id.m_bc_event)
+        val isMiniEvent = convertView.findViewById<ImageView>(R.id.m_mc_event)
+        // Populate the data into the template view using the data object
+        name.text = monster.name
+        image.setImageResource(getDrawable(monster.name))
 
-        return retView
+        // Return the completed view to render on screen
+        return convertView
     }
 
-    internal class ViewHolder {
+    private fun getDrawable(name: String): Int {
+        val search = name.replace(" ", "_").toLowerCase()
 
-        //android:tint="#b888" (no crown)
-        //android:tint="#0888" (with crown)
-
-        //var image: ImageView? = null
+        return context.resources.getIdentifier(search, "drawable", context.packageName)
     }
-
 }

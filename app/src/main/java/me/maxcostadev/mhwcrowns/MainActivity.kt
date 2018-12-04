@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loadData() {
-        JsonLoader.getMonsters(applicationContext) // TODO: send the data to a adapter
+        val data = JsonLoader.getMonsters(applicationContext)
+        list.adapter = Adapter(applicationContext, data)
         setUpProgressBar()
     }
 
