@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Tobi Kadachi",
+    "biggest": 1586,
+    "smallest": 1144,
+    "big_crown": true,
+    "mini_crown": true,
+    "big_crown_is_event": true,
+    "mini_crown_is_event": true,
+    "big_crown_name_event": "Big Crown Event",
+    "mini_crown_name_event": "Mini Crown Event"
+  },
+  {
+    "name": "Paolumu",
+    "biggest": 1429,
+    "smallest": 1006,
+    "big_crown": true,
+    "mini_crown": true,
+    "big_crown_is_event": true,
+    "mini_crown_is_event": true,
+    "big_crown_name_event": "Big Crown Event",
+    "mini_crown_name_event": "Mini Crown Event"
+  }
+]
