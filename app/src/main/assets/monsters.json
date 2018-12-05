@@ -8,7 +8,9 @@
     "big_crown_is_event": true,
     "mini_crown_is_event": true,
     "big_crown_name_event": "Big Crown Event",
-    "mini_crown_name_event": "Mini Crown Event"
+    "mini_crown_name_event": "Mini Crown Event",
+    "big_crown_video": "http://google.com",
+    "mini_crown_video": "http://google.com"
   },
   {
     "name": "Paolumu",
@@ -19,6 +21,8 @@
     "big_crown_is_event": true,
     "mini_crown_is_event": true,
     "big_crown_name_event": "Big Crown Event",
-    "mini_crown_name_event": "Mini Crown Event"
+    "mini_crown_name_event": "Mini Crown Event",
+    "big_crown_video": "http://google.com",
+    "mini_crown_video": "http://google.com"
   }
 ]

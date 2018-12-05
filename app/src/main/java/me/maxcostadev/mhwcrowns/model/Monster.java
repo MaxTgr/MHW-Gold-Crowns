@@ -10,6 +10,8 @@ public class Monster {
     public boolean mini_crown_is_event;
     public String big_crown_name_event;
     public String mini_crown_name_event;
+    public String big_crown_video;
+    public String mini_crown_video;
     Monster(){
 
     }
