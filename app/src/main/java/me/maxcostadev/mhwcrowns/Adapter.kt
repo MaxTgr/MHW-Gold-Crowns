@@ -39,7 +39,7 @@ class Adapter(context: Context, users: ArrayList<Monster>) : ArrayAdapter<Monste
     }
 
     private fun getDrawable(name: String): Int {
-        val search = name.replace(" ", "_").toLowerCase()
+        val search = name.replace("[ -]", "_").toLowerCase()
 
         return context.resources.getIdentifier(search, "drawable", context.packageName)
     }
