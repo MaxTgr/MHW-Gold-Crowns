@@ -13,7 +13,7 @@ import me.maxcostadev.mhwcrowns.model.Monster;
 
 public class JsonLoader {
 
-    public static ArrayList<Monster> getMonsters(Context context){
+    public static ArrayList<Monster> getMonsters(Context context) {
         Gson gson = new Gson();
 
         Monster[] arr = gson.fromJson(loadJSONFromAsset(context), Monster[].class);
