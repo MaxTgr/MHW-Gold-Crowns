@@ -68,6 +68,6 @@ class Adapter(context: Context, users: ArrayList<Monster>) : ArrayAdapter<Monste
     private fun getDrawable(name: String): Int {
         val re = Regex("[ -]")
         val search = re.replace(name, "_").toLowerCase()
-        return context.resources.getIdentifier(search, "drawable", context.packageName)
+        return context.resources.getIdentifier(search, "mipmap", context.packageName)
     }
 }

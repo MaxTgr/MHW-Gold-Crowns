@@ -12,7 +12,7 @@
         android:layout_height="56dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/tobi_kadachi"/>
+        android:src="@mipmap/tobi_kadachi"/>
 
     <TextView
         android:textSize="18sp"
