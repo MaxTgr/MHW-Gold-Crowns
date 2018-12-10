@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aṕp="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="216dp">
+
+    <ImageView
+        android:id="@+id/popup_img"
+        app:layout_constraintRight_toRightOf="parent"
+        aṕp:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@mipmap/tobi_kadachi"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/popup_img"
+        app:layout_constraintBottom_toBottomOf="@id/popup_img"
+        app:layout_constraintLeft_toLeftOf="@id/popup_img"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="\\/ 9999"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/popup_img"
+        app:layout_constraintBottom_toBottomOf="@id/popup_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/popup_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="/\\ 9999"/>
+
+    <LinearLayout
+        android:id="@+id/bc_popup"
+        app:layout_constraintBottom_toBottomOf="@id/mc_popup"
+        app:layout_constraintTop_toBottomOf="@id/popup_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mc_popup"
+        app:layout_constraintTop_toBottomOf="@id/bc_popup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

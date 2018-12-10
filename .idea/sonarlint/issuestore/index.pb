@@ -11,3 +11,9 @@ R
 "app/src/main/res/values/colors.xml,9/6/969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
 k
 ;app/src/main/java/me/maxcostadev/mhwcrowns/CrownLoader.java,0/d/0dcb2e22514b244e2e0782481235217d68403f82
+U
+%app/src/main/res/layout/list_item.xml,0/e/0e2dbde10fa21a69e5da23f2681513bb29e1a4c4
+Y
+)app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
+V
+&app/src/main/res/layout/list_popup.xml,8/4/84cf2dc4aff60de803621f069f97f2b6f60a1817
