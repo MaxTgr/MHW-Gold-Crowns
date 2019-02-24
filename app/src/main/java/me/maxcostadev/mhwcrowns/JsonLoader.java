@@ -13,6 +13,8 @@ import me.maxcostadev.mhwcrowns.model.Monster;
 
 public class JsonLoader {
 
+    private static final String MAIN_JSON = "monsters.json";
+
     public static ArrayList<Monster> getMonsters(Context context) {
         Gson gson = new Gson();
 
@@ -25,7 +27,7 @@ public class JsonLoader {
         String json = null;
 
         try {
-            InputStream is = context.getAssets().open("monsters.json");
+            InputStream is = context.getAssets().open(MAIN_JSON);
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
