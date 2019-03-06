@@ -1,5 +1,0 @@
-
-Šsquid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(”ØþÃüÿÿÿÿ
-dsquid:S2674"JCheck the return value of the "read" call to see how many bytes were read.(ë¥áïøÿÿÿÿ
-Tsquid:S1118":Add a private constructor to hide the implicit public one.(„¬ã‹üÿÿÿÿ
-8squid:S1148"#Use a logger to log this exception.(Ç’Çê
